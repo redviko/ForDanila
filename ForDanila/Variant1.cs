@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,7 +39,6 @@ namespace ForDanila
             return
                 $"ФИО:{ФИО} Должность: {Должность} Зарплата: {Зарплата} Год поступления на работу:{ГодПоступленияНаРаботу}";
         }
-
         public static void СтажБольше(Int32 стаж, ref List<Variant1> листсработниками)
         {
             bool такиеесть = false;
@@ -51,7 +51,6 @@ namespace ForDanila
                     такиеесть = true;
                 }
             }
-
             if (!такиеесть)
             {
                 Console.WriteLine($"Таковых нет");
